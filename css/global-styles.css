@@ -1,0 +1,14 @@
+body {
+    font-family: DessertScript, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    background: radial-gradient(#86d0f6,#86d0f6);
+}
+
+.content {
+    max-width: 1340px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-top: 170px;
+}
