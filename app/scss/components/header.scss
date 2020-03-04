@@ -1,0 +1,17 @@
+@import "../vars";
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: $white;
+    border-radius: 50px;
+  }
+  &__item {
+    cursor: pointer;
+    min-width: 130px;
+    font-size: 23px;
+  }
+}
