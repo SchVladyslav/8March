@@ -20,6 +20,10 @@ html {
     list-style: none;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   /* Grouping content
      ========================================================================== */
   
