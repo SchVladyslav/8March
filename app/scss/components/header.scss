@@ -1,17 +1,58 @@
 @import "../vars";
+
 .nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  padding: 10px 15px;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 2px 5px $shadowColor;
+
   &__list {
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
-    background-color: $white;
-    border-radius: 50px;
   }
-  &__item {
+
+  &__item + &__item {
+    margin-left: 50px;
+  }
+
+  &__item:nth-child(2) {
+    margin-right: 100px;
+  }
+
+  &__item {   
+    font-size: $navSize;
+    
+    a {
+      color: $mainText;
+    }
+
+    a:hover {
+      color: $mainTextHover;
+      text-decoration: none;
+    }
+    
     cursor: pointer;
-    min-width: 130px;
-    font-size: 23px;
+
+    &--telegram a {
+      color: $telegramColor;
+
+      &:hover {
+        opacity: .75;        
+      }
+    }
+    
+    &--instagram a {
+      color: $instagramColor;
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+
+    
   }
 }

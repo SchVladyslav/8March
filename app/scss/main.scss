@@ -4,6 +4,7 @@
 @import "fonts";
 @import "libs";
 @import "components/header";
+@import "components/greeting";
 @import "base/row";
 
 ::placeholder {
@@ -40,12 +41,8 @@ body {
 
 .container {
   max-width: $containerWidth;
-  padding: 0 15px;
+  padding: 0 25px;
   margin: 0 auto;
-}
-
-.wrapper {
-  padding-top: 176px;
 }
 
 .img-responsive {
