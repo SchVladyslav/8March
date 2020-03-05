@@ -14,63 +14,100 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 30px 10%;
-
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-
+  padding: 10px 15px;
+  border-radius: 10px;
   box-shadow: 0px 2px 5px $shadowColor;
-
-  &__logo {
-    cursor: pointer;
-  }
-
+  cursor: pointer;
   &__list {
     display: flex;
     justify-content: space-between;
   }
-
   &__item + &__item {
-    margin-left: 56px;
+    margin-left: 50px;
   }
-  
-  &__item.nav__item--instagram {
-    margin-left: 65px;
-  }
-
   &__item:nth-child(2) {
-    margin-right: 266px;
+    margin-right: 100px;
   }
-
   &__item {
     font-size: $navSize;
-    
     a {
-      color: $headerTextColor;
+      color: $text;
+    }
+    a:hover {
+      color: $accent;
       text-decoration: none;
-      transition: $transition;
-     
+    }
+    &--telegram a {
+      color: $accent;
       &:hover {
-        opacity: $navOpacity;  
+        opacity: 0.75;
+      }
+    }
+    &--instagram a {
+      color: $accent;
+      &:hover {
+        opacity: 0.75;
       }
     }
 
-    .item__input:checked + a {
-      color: $headerTextActive;
-    }
+    padding: 30px 10%;
 
-    .item__label {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    box-shadow: 0px 2px 5px $shadowColor;
+
+    &__logo {
       cursor: pointer;
     }
 
-    .social {
-      position: relative;
-      fill: $headerTextColor;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
 
-      svg {
-        position: absolute;
-        top: 0;
-        left: -30px;
+    &__item + &__item {
+      margin-left: 56px;
+    }
+
+    &__item.nav__item--instagram {
+      margin-left: 65px;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 266px;
+    }
+
+    &__item {
+      font-size: $navSize;
+
+      a {
+        color: $headerTextColor;
+        text-decoration: none;
+        transition: $transition;
+
+        &:hover {
+          opacity: $navOpacity;
+        }
+      }
+
+      .item__input:checked + a {
+        color: $headerTextActive;
+      }
+
+      .item__label {
+        cursor: pointer;
+      }
+
+      .social {
+        position: relative;
+        fill: $headerTextColor;
+
+        svg {
+          position: absolute;
+          top: 0;
+          left: -30px;
+        }
       }
     }
   }

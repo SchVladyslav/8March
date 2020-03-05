@@ -1,0 +1,26 @@
+@import "../vars";
+.instagram {
+  &__title {
+    display: inline-block;
+    max-width: 650px;
+    line-height: 50px;
+    .base-title {
+      line-height: 40px;
+    }
+  }
+  &__subtitle {
+    line-height: 1;
+    .base-title {
+      padding-bottom: 5px;
+    }
+  }
+  &__btn {
+    display: block;
+    line-height: 1;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: $btnBg;
+    font-size: 21px;
+    font-weight: 500;
+  }
+}

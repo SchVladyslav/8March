@@ -28,6 +28,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-tinypng-free": "^1.0.8",
     "gulp-uglify": "^3.0.2",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "video.js": "^7.6.6"
   }
 }
