@@ -8,7 +8,8 @@
   },
   "dependencies": {
     "dependencies": "0.0.1",
-    "gulp-iconfont-css": "^3.0.0"
+    "gulp-iconfont-css": "^3.0.0",
+    "instafeed.js": "^1.4.1"
   },
   "author": "WebDesign Master",
   "license": "ISC",
