@@ -5,63 +5,109 @@
   <meta charset="utf-8" />
   <!-- <base href="/"> -->
 
-  <title>OptimizedHTML 4</title>
-  <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta property="og:image" content="path/to/image.jpg" />
+    <link rel="icon" href="img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon-180x180.png"
+    />
+    <meta name="theme-color" content="#000" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <body>
+    <!-- Custom HTML -->
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav__logo">
+            <img src="./img/Logo.png" alt="Nix" />
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <input id="brama" class="item__input visually-hidden" type="radio" name="radio-link" />
+              <a class="link" href="#">
+                <label for="brama" class="item__label">Брама</label>
+              </a>
+            </li>
+            <li class="nav__item">
+              <input id="paralel" class="item__input visually-hidden" type="radio" name="radio-link" />
+              <a class="link" href="#">
+                <label for="paralel" class="item__label">Паралель</label>
+              </a>
+            </li>
+            <li class="nav__item nav__item--telegram">
+              <a class="social" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23.999"
+                  height="20"
+                  viewBox="0 0 23.999 20"
+                >
+                  <path
+                    d="M9.417,15.181l-.4,5.584a1.388,1.388,0,0,0,1.109-.537l2.663-2.545,5.518,4.041c1.012.564,1.725.267,2-.931L23.93,3.821h0c.321-1.5-.541-2.081-1.527-1.714L1.114,10.257C-.339,10.821-.317,11.631.867,12L6.31,13.691,18.953,5.78c.595-.394,1.136-.176.691.218Z"
+                    transform="translate(0 -2)"
+                  />
+                </svg>
+                Telegram чат</a
+              >
+            </li>
+            <li class="nav__item nav__item--instagram">
+              <a class="social" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g transform="translate(0 -0.001)">
+                    <path
+                      d="M12,5.838A6.158,6.158,0,1,0,18.162,12,6.157,6.157,0,0,0,12,5.838Zm0,10.155a4,4,0,1,1,4-4A4,4,0,0,1,12,15.993Z"
+                    />
+                    <path
+                      d="M16.948.076c-2.208-.1-7.677-.1-9.887,0A7.172,7.172,0,0,0,2.025,2.017C-.283,4.325.012,7.435.012,12c0,4.668-.26,7.706,2.013,9.979C4.342,24.291,7.5,23.988,12,23.988c4.624,0,6.22,0,7.855-.63,2.223-.863,3.9-2.85,4.065-6.419.1-2.209.1-7.677,0-9.887-.2-4.213-2.459-6.768-6.976-6.976Zm3.5,20.372c-1.513,1.513-3.612,1.378-8.468,1.378-5,0-7.005.074-8.468-1.393-1.685-1.677-1.38-4.37-1.38-8.453,0-5.525-.567-9.5,4.978-9.788,1.274-.045,1.649-.06,4.856-.06l.045.03c5.329,0,9.51-.558,9.761,4.986.057,1.265.07,1.645.07,4.847,0,4.942.093,6.959-1.394,8.453Z"
+                    />
+                    <circle
+                      cx="1.439"
+                      cy="1.439"
+                      r="1.439"
+                      transform="translate(16.967 4.156)"
+                    />
+                  </g>
+                </svg>
+                Instagram</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-  <!-- Template Basic Images Start -->
-  <meta property="og:image" content="path/to/image.jpg" />
-  <link rel="icon" href="img/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png" />
-  <!-- Template Basic Images End -->
-
-  <!-- Custom Browsers Color Start -->
-  <meta name="theme-color" content="#000" />
-  <!-- Custom Browsers Color End -->
-
-  <link rel="stylesheet" href="css/main.min.css" />
-</head>
-
-<body>
-  <!-- Custom HTML -->
-  <div class="wrapper">
-    <header class="header">
-      <nav class="nav">
-        <div class="nav__logo">
-          <img src="img/logo.png" alt="Nix">
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="/#brama">Брама</a>
-          </li>
-          <li class="nav__item">
-            <a href="/#paralel">Паралель</a>
-          </li>
-          <li class="nav__item nav__item--telegram">
-            <i></i>
-            <a class="" href="#">Telegram чат</a>
-          </li>
-          <li class="nav__item nav__item--instagram">
-            <i></i>
-            <a class="" href="#">Instagram</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <article class="greeting">
-        <div class="container">
-          <div class="df-row">
+      <div class="container">
+        <main class="main">
+          <article class="greeting">
             <div class="greeting__content">
-              <h1 class="greeting__title">Сияйте,<br /> как бриллианты! Лучитесь счастьем и красотой!</h1>
-              <p class="greeting__text">Сегодня именно тот день, который сохранит этот блеск на целый год, и покажет,
-                какими яркими мы видим вас.</p>
-              <p class="greeting__text">Это небольшой путеводитель по местам, где вас будут ждать отдых и развлечения!
+              <h1 class="greeting__title">
+                Сияйте,<br />
+                как бриллианты!
+              </h1>
+              <p class="greeting__text">
+                Сегодня именно тот день, который сохранит этот блеск на целый
+                год, и покажет, какими яркими мы видим вас.
               </p>
-              <p class="greeting__text">Мы очень старались наполнить этот день радостью, улыбками, позитивом и конечно
-                же вниманием.</p>
+              <p class="greeting__text">
+                Это небольшой путеводитель по местам, где вас будут ждать отдых
+                и развлечения!
+              </p>
+              <p class="greeting__text">
+                Мы очень старались наполнить этот день радостью, улыбками,
+                позитивом и конечно же вниманием.
+              </p>
               <p class="greeting__text">С праздником, милые девушки!</p>
             </div>
             <div class="greeting__logo">
