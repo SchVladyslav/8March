@@ -1,61 +1,115 @@
 @import "../vars";
 
 .greeting {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 250px;
+
+  &__title {
+    margin-bottom: 48px;
+    line-height: 1.2;
+    color: $mainTitleColor;
+    font-size: $titleSize;
+  }
+
+  &__content {
+    max-width: 540px;
+  }
+
+  &__text {
+    font-size: $textSize;
+  }
+
+  &__text + &__text {
+    margin-top: 20px;
+  }
+
+  &__logo {
+    max-width: 660px;
+
+    img {
+      width: 100%;
+      max-height: 600px;
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .greeting {
+    margin-bottom: 150px;
+    &__title {
+      font-size: 60px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .greeting {
+    margin-bottom: 100px;
 
     &__title {
-        margin-bottom: 48px;
-
-        line-height: 1.2;
-        color: $mainTitleColor; 
-        font-size: $titleSize;
-    }
-
-    &__content {
-        max-width: 540px;
+      font-size: 50px;
     }
 
     &__text {
-        font-size: $textSize;
+      font-size: 16px;
     }
 
-    &__text + &__text {
-        margin-top: 20px;
-    }
+    &__logo {
+      max-width: 560px;
 
-    &__logo  {
-        max-width: 960px;
-
-        img {
+      img {
         width: 100%;
         max-height: 600px;
-        }
-    }
-  }
-
-  @media (max-width: 1024px) {
-    .greeting {
-        &__title {
-            font-size: 50px
-        }
-    }
-
-    &__logo  {
-        max-width: 360px;
-
-        img {
-        width: 100%;
-        max-height: 600px;
-        }
+      }
     }
 
     &__content {
-        max-width: 340px;
+      max-width: 340px;
     }
 
     &__text {
-        font-size: 16px;
+      font-size: 16px;
     }
   }
+}
+
+@media (max-width: 960px) {
+  .greeting {
+    flex-direction: column;
+
+    &__content {
+      max-width: 100%;
+
+      order: 2;
+    }
+
+    &__logo {
+      max-width: 100%;
+      margin-bottom: 40px;
+
+      img {
+        width: 100%;
+        max-height: 600px;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .greeting {
+    margin-bottom: 40px;
+    &__title {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+}

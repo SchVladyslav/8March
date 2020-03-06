@@ -48,8 +48,8 @@ gulp.task("scripts", function() {
     gulp
       .src([
         "app/libs/jquery/dist/jquery.min.js",
-        "./node_modules/video.js/dist/video.js",
         "./node_modules/instafeed.js/instafeed.min.js",
+        "./app/libs/build.min.js",
         "app/js/common.js" // Always at the end
       ])
       .pipe(concat("scripts.min.js"))

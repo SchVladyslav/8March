@@ -12,8 +12,11 @@
 }
 
 ::selection {
-  background-color: $accent;
-  color: #fff;
+  background-color: transparent;
+}
+
+.wrapper {
+  background: transparent;
 }
 
 body {
@@ -39,6 +42,24 @@ body {
   }
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: $containerWidth;
   padding: 0 45px;
@@ -55,7 +76,7 @@ body {
 }
 
 .main {
-  margin-top: 160px;
+  padding-top: 160px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -122,6 +143,10 @@ p {
   margin: 0;
 }
 
+label {
+  margin-bottom: 0;
+}
+
 .df-row {
   display: flex;
   flex-wrap: wrap;
@@ -159,4 +184,114 @@ p {
 
 .accent {
   color: $accent;
+}
+
+.footer {
+  padding-bottom: 40px;
+  .anchor-section {
+    width: 100%;
+    background-color: $btnBg;
+    border-radius: 20px;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130px;
+      color: $accent;
+      font-size: 33px;
+      img {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    padding: 0;
+    margin: 0 45px;
+  }
+  .container--shadow {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .video0-dimensions {
+    width: 100%;
+  }
+  .video-js .vjs-tech {
+    object-fit: cover;
+  }
+  .broadcast {
+    &__title {
+      padding-bottom: 40px;
+    }
+  }
+  .part {
+    flex-wrap: wrap;
+    &__media {
+      width: 100%;
+    }
+    &__item {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    &__info {
+      padding-bottom: 20px;
+    }
+  }
+  .part + .part {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .instagram .row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 100px;
+  }
+  .video0-dimensions {
+    height: 300px;
+  }
+  .instagram {
+    &__subtitle {
+      padding-bottom: 20px;
+    }
+    &__btn {
+      font-size: 14px;
+      padding: 10px 20px;
+      img {
+        width: 14px;
+      }
+    }
+    .row {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .base-title {
+    font-size: 18px;
+  }
+  .instagram__title .base-title {
+    line-height: 1.4;
+  }
+  .container--shadow {
+    padding: 15px 30px;
+  }
+  .footer {
+    .anchor-section {
+      a {
+        height: 80px;
+        font-size: 20px;
+        img {
+          width: 26px;
+        }
+      }
+    }
+  }
 }

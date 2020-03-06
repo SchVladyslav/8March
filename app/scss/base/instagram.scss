@@ -1,15 +1,18 @@
 @import "../vars";
 .instagram {
+  padding-bottom: 40px;
   &__title {
     display: inline-block;
     max-width: 650px;
     line-height: 50px;
+    padding-bottom: 50px;
     .base-title {
       line-height: 40px;
     }
   }
   &__subtitle {
     line-height: 1;
+    padding-right: 20px;
     .base-title {
       padding-bottom: 5px;
     }
@@ -22,5 +25,39 @@
     background-color: $btnBg;
     font-size: 21px;
     font-weight: 500;
+    color: $text;
+    &:hover {
+      color: $text;
+    }
   }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    height: auto !important;
+  }
+  .grid-item {
+    .video {
+      display: block;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .anchor-section {
+    width: 100%;
+    padding: 52px 20px;
+    text-align: center;
+    background-color: $btnBg;
+  }
+}
+
+[data-aos][data-aos][data-aos-delay="400"].aos-animate,
+body[data-aos-delay="400"] [data-aos].aos-animate {
+  transition-delay: 0.4s;
+}
+[data-aos^="fade"][data-aos^="fade"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
 }

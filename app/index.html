@@ -10,15 +10,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-    <meta property="og:image" content="path/to/image.jpg" />
-    <link rel="icon" href="img/favicon/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicon/apple-touch-icon-180x180.png"
-    />
+    <link rel="apple-touch-icon" href="img/shinebright_gold.png"/>
+    <link rel="icon" type="image/png" href="img/shinebright_gold.png" />
     <meta name="theme-color" content="#000" />
     <link rel="stylesheet" href="css/main.min.css" />
+    <title>Shine Bright NIX Girls</title>
   </head>
 
   <body>
@@ -27,27 +23,25 @@
       <header class="header">
         <nav class="nav">
           <div class="nav__logo">
-            <img src="./img/Logo.png" alt="Nix" />
+            <img src="./img/logo.png" alt="Nix" />
           </div>
           <ul class="nav__list">
             <div class="nav__item-links">
               <li class="nav__item">
-                <input id="brama" class="item__input visually-hidden" type="radio" name="radio-link" />
-                <a class="link" href="#">
-                  <label for="brama" class="item__label">Брама</label>
+                <a class="link brama-link" href="#bramaMain" data-smooth-anchor-scroll-duration="700">
+                  Брама
                 </a>
               </li>
               <li class="nav__item">
-                <input id="paralel" class="item__input visually-hidden" type="radio" name="radio-link" />
-                <a class="link" href="#">
-                  <label for="paralel" class="item__label">Паралель</label>
+                <a class="link paral-link" href="#paral" data-smooth-anchor-scroll-duration="700">
+                  Паралель
                 </a>
               </li>
           </div>
           <div class="nav__item-social">
             <li class="nav__item nav__item--telegram">
-              <a class="social" href="#">
-                <svg
+              <a class="social" href="https://t.me/joinchat/CBE14BsIJCNinkZ5K2IR6w" target="blank">
+                <svg 
                   xmlns="http://www.w3.org/2000/svg"
                   width="23.999"
                   height="20"
@@ -58,11 +52,11 @@
                     transform="translate(0 -2)"
                   />
                 </svg>
-                Telegram чат</a
+                <span>Telegram чат</span></a
               >
             </li>
             <li class="nav__item nav__item--instagram">
-              <a class="social" href="#">
+              <a class="social" href="#instagram" data-smooth-anchor-scroll-duration="700">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -84,7 +78,7 @@
                     />
                   </g>
                 </svg>
-                Instagram</a
+                <span>Instagram</span></a
               >
             </li>
           </div>
@@ -92,36 +86,31 @@
         </nav>
       </header>
 
-      <div class="container">
-        <main class="main">
+      
+        <main class="main" id="top">
+          <div class="container">
           <article class="greeting">
             <div class="greeting__content">
               <h1 class="greeting__title">
-                Сияйте,<br />
+                Сияйте,
                 как бриллианты!
               </h1>
               <p class="greeting__text">
                 Лучитесь счастьем и красотой! Сегодня именно тот день, который сохранит этот блеск на целый год, и покажет, какими яркими мы видим вас.
               </p>
               <p class="greeting__text">
-                Это небольшой путеводитель по местам, где вас будут ждать отдых
-                и развлечения!
-              </p>
-              <p class="greeting__text">
-                Мы очень старались наполнить этот день радостью, улыбками,
-                позитивом и конечно же вниманием.
+                Для Вас мы наполним этот день радостью, улыбками, позитивом и конечно же вниманием.
               </p>
               <p class="greeting__text">С праздником, милые девушки!</p>
             </div>
             <div class="greeting__logo">
               <img src="./img/shinebright_gold.png" />
             </div>
-          </div>
+          </article>
         </div>
-      </article>
       <section class="broadcast">
         <div class="container">
-          <div class="broadcast__wrapper">
+          <div class="broadcast__wrapper content-wrapper">
             <div class="broadcast__part part">
               <div class="part__info">
                 <h3 class="broadcast__title base-title">Радиорубка - трансляция</h3>
@@ -139,45 +128,24 @@
               </div>
             </div>
           </div>
-          <div class="broadcast__wrapper">
-            <h3 class="broadcast__title base-title">Брама</h3>
-            <div class="broadcast__part part">
-              <div class="part__info">
-                <h5 class="part__title">1 этаж</h3>
-                  <ul class="part__list">
-                    <li class="part__item">
-                      <strong>9:00 - 11:00 - Встреча гостей</strong>
-                    </li>
-                  </ul>
-              </div>
-              <div class="part__media">
-                <video id="video0" class="video-js vjs-big-play-centered" controls preload="auto" width="768"
-                  height="432" data-setup="{}">
-                  <source src="https://8march.nixsolutions.com/hls/stream1.m3u8" type="application/x-mpegURL" />
-                  <p class="vjs-no-js">
-                    To view this video please enable JavaScript, and consider
-                    upgrading to a web browser that
-                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                  </p>
-                </video>
-              </div>
-            </div>
+          <div class="broadcast__wrapper content-wrapper brama-wrapper" id="bramaMain">
+            <h3 class="broadcast__title base-title">Программа дня в офисе БРАМА</h3>
             <div class="broadcast__part part">
               <div class="part__info">
                 <h5 class="part__title">2 этаж</h3>
                   <ul class="part__list">
                     <li class="part__item">
-                      <strong>11:00 до 16:00 - Сладкое угощение (цветная сладкая вата)</strong>
+                      <strong>11:00 до 16:00 - Сладкое угощение ждет вас (цветная сладкая вата)</strong>
                     </li>
                     <li class="part__item">
-                      <strong>18:00 - Начинает работу караоке</strong>
+                      <strong>18:00 – Начинает работу караоке. В перерыве между песнями официант наполнит ваши бокалы шампанским.</strong>
                     </li>
                   </ul>
               </div>
               <div class="part__media">
                 <video id="video0" class="video-js vjs-big-play-centered" controls preload="auto" width="768"
                   height="432" data-setup="{}">
-                  <source src="https://8march.nixsolutions.com/hls/stream1.m3u8" type="application/x-mpegURL" />
+                  <source src="https://8march.nixsolutions.com/hls/2floor.m3u8" type="application/x-mpegURL" />
                   <p class="vjs-no-js">
                     To view this video please enable JavaScript, and consider
                     upgrading to a web browser that
@@ -191,29 +159,32 @@
                 <h5 class="part__title">6 этаж</h3>
                   <ul class="part__list">
                     <li class="part__item">
-                      <strong>18:00 - Начинает работу коктейльный бар.</strong>
+                      <strong>11:00 - 18:00 работает фотозона. Камеры только и ждут возможности, чтобы запечатлеть вашу красоту</strong>
                     </li>
                     <li class="part__item">
-                      <strong>18:30 - Heart Beat brass band (первое выступление)</strong>
+                      <strong>18:00 – Начинает работать бар, где можно заказать любимые коктейли и начать отмечать на полную</strong>
                     </li>
                     <li class="part__item">
-                      <strong>19:15 - Музыка от DJ</strong>
+                      <strong>18:30 - 19:15 – Выступление зажигательного Heart Beat brass band</strong>
                     </li>
                     <li class="part__item">
-                      <strong>20:45 - Heart Beat brass band (второе выступление)</strong>
+                      <strong class="accent">19:30 – Рекламная пауза и мы Приглашаем девушек на 10 этаж, где будет выступать хедлайнер вечера «Друга ріка»</strong>
                     </li>
                     <li class="part__item">
-                      <strong>21:30 - Начинается дискотека</strong>
+                      <strong>20:45-21:30 – Heart Beat brass band еще раз порадует вас своим выступлением</strong>
                     </li>
                     <li class="part__item">
-                      <strong>23:00 - Окончание программы</strong>
+                      <strong>21:30 – танцевальный сет от DJ</strong>
+                    </li>
+                    <li class="part__item">
+                      <strong>23:00 – официальная программа в офисе завершена и принцессы разъезжаются по домам или продолжают праздник вне стен офиса</strong>
                     </li>
                   </ul>
               </div>
               <div class="part__media">
                 <video id="video0" class="video-js vjs-big-play-centered" controls preload="auto" width="768"
                   height="432" data-setup="{}">
-                  <source src="https://8march.nixsolutions.com/hls/stream1.m3u8" type="application/x-mpegURL" />
+                  <source src="https://8march.nixsolutions.com/hls/6floor.m3u8" type="application/x-mpegURL" />
                   <p class="vjs-no-js">
                     To view this video please enable JavaScript, and consider
                     upgrading to a web browser that
@@ -227,29 +198,29 @@
                 <h5 class="part__title">10 этаж</h3>
                   <ul class="part__list">
                     <li class="part__item">
-                      <strong>11:00 - 18:00 фотозона ждет вас</strong>
+                      <strong>11:00-18:00 работает фотозона. Камеры только и ждут возможности, чтобы запечатлеть вашу красоту</strong>
                     </li>
                     <li class="part__item">
-                      <strong>11:00 - 16:00 работает радиорубка</strong>
+                      <strong>11:00-16:00 работает радиорубка, где можно прийти и поздравить девушек с праздником</strong>
                     </li>
                     <li class="part__item">
-                      <strong>18:00 - Начинает работу коктейльный бар</strong>
+                      <strong>18:00 – Начинает работать бар, где можно заказать любимые коктейли и начать отмечать на полную</strong>
                     </li>
                     <li class="part__item">
-                      <strong>19:30 - Выступление хедлайнера</strong>
+                      <strong>19:30 – Выступление хедлайнера, потрясающей группы «Друга ріка»</strong>
                     </li>
                     <li class="part__item">
-                      <strong>20:30 - Музыка от DJ</strong>
+                      <strong>20:30 – Начинается дискотека. Кто любит тусить – вам сюда</strong>
                     </li>
                     <li class="part__item">
-                      <strong>23:00 - Окончание программы</strong>
+                      <strong>23:00 - официальная программа в офисе завершена и принцессы разъезжаются по домам или продолжают праздник вне стен офиса</strong>
                     </li>
                   </ul>
               </div>
               <div class="part__media">
-                <video id="video0" class="video-js vjs-big-play-centered" controls preload="auto" width="768"
+                <video id="video0" class="video-js vjs-big-play-centered" controls preload="auto" width="740"
                   height="432" data-setup="{}">
-                  <source src="https://8march.nixsolutions.com/hls/stream1.m3u8" type="application/x-mpegURL" />
+                  <source src="https://8march.nixsolutions.com/hls/10floor.m3u8" type="application/x-mpegURL" />
                   <p class="vjs-no-js">
                     To view this video please enable JavaScript, and consider
                     upgrading to a web browser that
@@ -259,27 +230,27 @@
               </div>
             </div>
           </div>
-          <div class="broadcast__wrapper">
-            <h3 class="broadcast__title base-title">Паралель</h3>
-            <div class="broadcast__part part part--text">
-              <div class="part__info">
-                <h5 class="part__title">6,8 этажи</h3>
-                  <ul class="part__list">
-                    <li class="part__item">
-                      <strong>C 11:00 - 18:00 фото-зоны</strong>
-                    </li>
-                  </ul>
-              </div>
-            </div>
+          <div class="broadcast__wrapper parall-wrapper" id="paral">
+            <h3 class="broadcast__title base-title">Программа дня в офисе ПАРАЛЛЕЛЬ</h3>
             <div class="broadcast__part part part--text">
               <div class="part__info">
                 <h5 class="part__title">6 этаж</h3>
                   <ul class="part__list">
                     <li class="part__item">
-                      <strong>18:00 - Начало вечерней программы </strong>
+                      <strong>18:00 – Начало вечерней программы.</strong>
                     </li>
                     <li class="part__item">
-                      <strong>19:00 -21:00 - Музыкант играет на гитаре</strong>
+                      <strong>19:00-21:00 – Музыкант играет на гитаре. В это же время официант будет разливать шампанское, и не позволит опустеть вашим бокалам.</strong>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+            <div class="broadcast__part part part--text">
+              <div class="part__info">
+                <h5 class="part__title">8 этаж</h3>
+                  <ul class="part__list">
+                    <li class="part__item">
+                      <strong>18.00 - Начинает работу караоке. Можете исполнить ваши самые любимые хиты, а также насладиться пением ваших коллег.</strong>
                     </li>
                   </ul>
               </div>
@@ -287,26 +258,43 @@
           </div>
         </div>
       </section>
-      <section class="instagram">
+      <section class="instagram" id="instagram">
         <div class="container container--shadow">
           <div class="instagram__title">
             <h2 class="base-title">Добавляйте свои фото в Instagram</h2>
             <div class="df-row align-items-center justify-content-between">
               <div class="instagram__subtitle">
-                <h2 class="base-title"> с хештегом <span class="accent">#nixgirls</span></h2>
+                <h2 class="base-title"> с <span class="accent">#shinebrightnixgirls</span></h2>
                 <p>Профиль Instagram должен быть открытым</p>
               </div>
-              <a href="https://www.instagram.com/explore/tags/nixgirlsontour/" class="instagram__btn"><img src="img/instagram.svg" alt="instagram"> <span>Instagram</span></a>
+              <a href="https://www.instagram.com/explore/tags/shinebrightnixgirls/" class="instagram__btn"><img src="img/instagram.svg" alt="instagram"> <span>Instagram</span></a>
             </div>
           </div>
-          <div class="instafeed"></div>
-          <button id="load-more">more</button>
+          <div class="gallery-body">
+            <div class="nixtagram-section">
+              <div class="nixtagram-content" id="nixgirlsontour">
+                <div class="row">
+                  <!--grid items-->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="anchor-section">
+          <a href="#top" data-smooth-anchor-scroll-duration="700">
+            <img src="img/chevron.svg" alt="">
+            <span>Вверх</span>
+          </a>
+        </div>
+      </div>
+    </footer>
   </div>
 
-  <script src="js/scripts.min.js"></script>
+  <script src="js/scripts.min.js?v=3"></script>
 </body>
 
 </html>
